@@ -15,5 +15,29 @@
   position: absolute;
   bottom: 0;
   left: 120px;
-  font-size: 18;
+  font-size: 18px;
+}
+
+.body-tag {
+  margin-left: 20px;
+}
+
+.bottom-tags {
+  bottom: 35px;
+}
+
+.bottom-html-tag {
+  margin-left: -20px;
+}
+
+.container {
+  width: 100%;
+  will-change: contents;
+  height: 90%;
+  min-height: 566px;
+  position: absolute;
+  /* opacity: 0; */
+  top: 5%;
+  margin: 0 auto;
+  z-index: 1;
 }
