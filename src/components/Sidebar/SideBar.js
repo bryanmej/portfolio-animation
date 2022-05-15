@@ -4,7 +4,12 @@ import { Link, NavLink } from "react-router-dom";
 import BLogo from "../../assets/images/b_logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faUser, faHome } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faUser,
+  faHome,
+  faCode,
+} from "@fortawesome/free-solid-svg-icons";
 
 const SideBar = () => (
   <div className="nav-bar">
@@ -29,6 +34,15 @@ const SideBar = () => (
         to="/about"
       >
         <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+      </NavLink>
+      <NavLink
+        exact="true"
+        className={(navigationData) =>
+          navigationData.isActive ? "active projects-link" : "projects-link"
+        }
+        to="/contact"
+      >
+        <FontAwesomeIcon icon={faCode} color="#4d4d4e" />
       </NavLink>
       <NavLink
         exact="true"

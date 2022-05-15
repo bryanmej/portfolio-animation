@@ -72,25 +72,29 @@ const HomePage = () => {
           Projects
         </Link>
       </div>
-      <div className="tech-cube">
-        <div className="cube-spinner">
-          <div className="face1">
-            <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-          </div>
-          <div className="face2">
-            <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-          </div>
-          <div className="face3">
-            <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-          </div>
-          <div className="face4">
-            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-          </div>
-          <div className="face5">
-            <FontAwesomeIcon icon={faNodeJs} color="#limegreen" />
-          </div>
-          <div className="face6">
-            <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+      <div className="stage-cube-cont">
+        <div className="cubespinner">
+          <div className="cube-wrap">
+            <div className="side side-back">
+              <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+            </div>
+            <div className="side side-top">
+              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+            </div>
+
+            <div className="side side-bottom">
+              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+            </div>
+
+            <div className="side side-left">
+              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+            </div>
+            <div className="side side-right">
+              <FontAwesomeIcon icon={faNodeJs} color="green" />
+            </div>
+            <div className="side side-front">
+              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+            </div>
           </div>
         </div>
       </div>
