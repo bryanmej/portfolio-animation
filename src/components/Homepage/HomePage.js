@@ -79,9 +79,8 @@ const HomePage = () => {
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
             </div>
             <div className="side side-top">
-              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+              <FontAwesomeIcon icon={faNodeJs} color="green" />
             </div>
-
             <div className="side side-bottom">
               <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
             </div>
@@ -90,7 +89,7 @@ const HomePage = () => {
               <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
             </div>
             <div className="side side-right">
-              <FontAwesomeIcon icon={faNodeJs} color="green" />
+              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
             </div>
             <div className="side side-front">
               <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />

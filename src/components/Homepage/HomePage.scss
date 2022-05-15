@@ -95,8 +95,8 @@
     .side {
       display: block;
       position: absolute;
-      width: 360px;
-      height: 360px;
+      width: 250px;
+      height: 250px;
       border: 1px solid #ccc;
       background: rgba(255, 255, 255, 0.4);
       text-align: center;
@@ -111,24 +111,24 @@
     }
 
     .side-front {
-      transform: translateZ(180px);
+      transform: translateZ(125px);
     }
 
     .side-back {
-      transform: rotateY(180deg) translateZ(180px);
+      transform: rotateY(180deg) translateZ(125px);
     }
 
     .side-top {
-      transform: rotateX(90deg) translateZ(180px);
+      transform: rotateX(90deg) translateZ(125px);
     }
     .side-bottom {
-      transform: rotateX(-90deg) translateZ(180px);
+      transform: rotateX(-90deg) translateZ(125px);
     }
     .side-left {
-      transform: rotateY(-90deg) translateZ(180px)
+      transform: rotateY(-90deg) translateZ(125px)
     }
     .side-right {
-      transform: rotateY(90deg) translateZ(180px)
+      transform: rotateY(90deg) translateZ(125px)
     }
 
     @keyframes rotate {
