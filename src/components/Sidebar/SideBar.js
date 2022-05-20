@@ -40,7 +40,7 @@ const SideBar = () => (
         className={(navigationData) =>
           navigationData.isActive ? "active projects-link" : "projects-link"
         }
-        to="/contact"
+        to="/projects"
       >
         <FontAwesomeIcon icon={faCode} color="#4d4d4e" />
       </NavLink>
