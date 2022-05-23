@@ -1,11 +1,11 @@
 import "./ProjectsPage.scss";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 const ProjectsPage = () => {
   const [cellWidth, setCellWidth] = useState();
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [radius, setRadius] = useState();
-  const [cells, setCells] = useState();
+
   const carousel = useRef();
   const theta = 360 / 9;
   const rotateFn = "rotateY";
@@ -16,40 +16,26 @@ const ProjectsPage = () => {
     </div>
   ));
 
-  useEffect(() => {
-    setCellWidth(carousel.current.offsetWidth);
-    setCells(window.document.querySelectorAll(".carousel__cell"));
-    changeCarousel();
-  }, [cellWidth, changeCarousel]);
-
-  function rotateCarousel() {
+  const rotateCarousel = useCallback(() => {
     var angle = theta * selectedIndex * -1;
 
     carousel.current.style.transform =
       "translateZ(" + -radius + "px) " + rotateFn + "(" + angle + "deg)";
-  }
+  }, [selectedIndex, radius, theta]);
 
-  function changeCarousel() {
+  const changeCarousel = useCallback(() => {
     const cellCount = 9;
     var cellSize = cellWidth;
     setRadius(Math.round(cellSize / 2 / Math.tan(Math.PI / cellCount)));
-    // for (var i = 0; i < cells.length; i++) {
-    //   var cell = cells[i];
-    //   if (i < cellCount) {
-    //     // visible cell
-    //     cell.style.opacity = 1;
-    //     var cellAngle = theta * i;
-    //     cell.style.transform =
-    //       rotateFn + "(" + cellAngle + "deg) translateZ(" + radius + "px)";
-    //   } else {
-    //     // hidden cell
-    //     cell.style.opacity = 0;
-    //     cell.style.transform = "none";
-    //   }
-    // }
 
     rotateCarousel();
-  }
+  }, [rotateCarousel, cellWidth]);
+
+  useEffect(() => {
+    setCellWidth(carousel.current.offsetWidth);
+
+    changeCarousel();
+  }, [cellWidth, changeCarousel]);
 
   return (
     <div>
