@@ -14,6 +14,34 @@ const ContactPage = () => {
             letterClass={letterClass}
           />
         </h2>
+        <div className="contact-form">
+          <ul>
+            <li>
+              <input type="text" name="name" placeholder="name" required />
+            </li>
+            <li>
+              <input type="email" name="email" placeholder="email" required />
+            </li>
+            <li>
+              <input
+                placeholder="Subject"
+                type="text"
+                name="subject"
+                required
+              />
+            </li>
+            <li>
+              <textarea
+                placeholder="Message"
+                name="message"
+                required
+              ></textarea>
+            </li>
+            <li>
+              <input type="submit" className="flat-button" value="Submit" />
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

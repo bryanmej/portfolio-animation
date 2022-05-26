@@ -1,0 +1,24 @@
+.contact-form {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35%;
+  vertical-align: middle;
+  display: table-cell;
+  max-height: 90%;
+
+  li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    opacity: 0;
+    animation: fadeInUp 2s 2s;
+    animation-fill-mode: forwards;
+    clear: both;
+  }
+}
