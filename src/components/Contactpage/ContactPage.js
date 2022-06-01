@@ -16,11 +16,11 @@ const ContactPage = () => {
         </h2>
         <div className="contact-form">
           <ul>
-            <li>
-              <input type="text" name="name" placeholder="name" required />
+            <li className="half">
+              <input type="text" name="name" placeholder="Name" required />
             </li>
-            <li>
-              <input type="email" name="email" placeholder="email" required />
+            <li className="half">
+              <input type="email" name="email" placeholder="Email" required />
             </li>
             <li>
               <input
