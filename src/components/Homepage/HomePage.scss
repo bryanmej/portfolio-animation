@@ -15,25 +15,6 @@
     font-family: 'Coolvetica';
     font-weight: 400;
 
-    &::before {
-      content: '<h1>';
-      color: #ffd700;
-      font-size: 18px;
-      position: absolute;
-      margin-top: -48px;
-      left: 15px;
-      opacity: 0.5;
-    }
-
-    &::after {
-      content: '</h1>';
-      color: #ffd700;
-      font-size: 18px;
-      position: absolute;
-      opacity: 0.5;
-      left: 15px;
-      bottom: 48px;
-    }
   }
 
   h2 {

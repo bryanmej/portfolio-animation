@@ -46,11 +46,10 @@ const HomePage = () => {
             idx={17}
           />
         </h1>
-        <span className="">&lt;button&gt;</span>
+
         <Link to="/contact" className="flat-button">
           Projects
         </Link>
-        <span className="">&lt;/button&gt;</span>
       </div>
       <div className="stage-cube-cont">
         <div className={"cubespinner"}>
